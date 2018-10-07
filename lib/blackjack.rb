@@ -1,3 +1,4 @@
+require 'pry'
 def welcome
   # code #welcome here
   puts "Welcome to the Blackjack Table"
@@ -40,6 +41,7 @@ def hit?(card_total)
   prompt_user
   user_input = get_user_input
   case user_input.downcase
+  binding.pry
   when "s"
     card_total
   when "h"
