@@ -38,14 +38,13 @@ end
 
 def hit?(card_total)
   # code hit? here
-  x = 0
   prompt_user
   user_input = get_user_input
   case user_input.downcase
   when "s"
     card_total
   when "h"
-    x += deal_card
+    card_total += deal_card
   else
     invalid_command
   end
